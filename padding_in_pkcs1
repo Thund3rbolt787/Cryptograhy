@@ -1,0 +1,6 @@
+string = input()
+l = len(string)
+remaining_digit= 16 - l
+hexadecimal = hex(remaining_digit)
+string = string + ("\\" + hexadecimal) * remaining_digit
+print(string)
